@@ -1,0 +1,208 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 100vh;
+  max-width: 700px;
+  flex-grow: 1;
+}
+
+header, main, footer {
+  width: 100%;
+  
+}
+
+header {
+  background-color: #CBF1F5;
+}
+
+
+footer {
+  background-color: #71C9CE;
+  text-align: center;
+}
+
+header, footer {
+  padding: 10px;
+}
+
+.contentArea {
+  width: 100%;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+/* 
+
+ADD GROCERY AREA
+
+*/
+
+.addGrocery {
+  margin: 25px 40px 25px 40px;
+}
+
+.addGrocery legend {
+  text-align: center;
+  padding: 0px 10px 0px 10px;
+}
+
+.addGrocery .addArea {
+  padding: 20px 25px 30px 25px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.addGrocery .addArea .inputArea {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-right: 25px;
+}
+
+.addGrocery .addArea #addInputText {
+  outline: none;
+  padding: 5px;
+  border: 1px solid red;
+  transition: box-shadow 0.1s;
+}
+.addGrocery .addArea #addInputText:focus {
+  box-shadow: 0px 0px 3px 1px red;
+}
+
+.addGrocery .addArea .addButton {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  padding: 6px 30px 4px 30px;
+
+  transition: color 0.2s, border 0.2s, background-color 0.2s;
+  cursor: pointer;
+}
+
+.addGrocery .addArea .addButton:hover {
+  background-color: red;
+  border: 1px solid red;
+  color:white;
+}
+
+/* 
+
+SEARCH ITEMS AREA
+
+*/
+
+.searchItems {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.searchItems .searchArea {
+  width: 50%;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 3px 0 3px;
+}
+
+.searchItems .searchInput {
+  padding: 5px;
+  border: 0;
+  flex-grow: 1;
+}
+
+.searchItems .searchInput:focus{
+  outline: 0;
+}
+
+.searchItems .searchButton {
+  background-color: white;
+  border:  0;
+  cursor: pointer;
+  margin-top: 3px;
+  transition: color 0.2s;
+  width: 50px;
+}
+
+.searchItems .searchButton:hover {
+  color: red;
+}
+
+/* 
+
+ITEMS AREA 
+
+*/
+.contentArea {
+  width: 100%;
+}
+
+.listArea {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  border: 1px solid #A6E3E9;
+  padding: 20px;
+}
+
+.listArea .checkboxArea {
+  width:50px;
+  accent-color: #A6E3E9;
+  cursor: pointer;
+}
+
+
+.listArea p {
+  flex-grow: 1;
+  background-color: #f0ffff;
+  padding: 10px;
+  margin:0px 10px 0px 10px;
+}
+
+.listArea .buttonArea {
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.listArea .buttonArea:hover {
+  color: red;
+}
+
+
+
+
+
+
