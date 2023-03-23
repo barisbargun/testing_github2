@@ -20,7 +20,7 @@ const App = () => {
 
 		try {
 			const data = JSON.parse(localStorage.getItem("shoppingList"))
-			setGroceries(data != 0 ? data : []);
+			setGroceries(data && data != 0 ? data : []);
 			setFetchError(null)
 			setLoadingStatus(false);
 
@@ -34,6 +34,8 @@ const App = () => {
 
 
 	useEffect(() => {
+
+
 		groceries && localStorage.setItem("shoppingList", JSON.stringify(groceries));
 	}, [groceries])
 
